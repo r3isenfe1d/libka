@@ -5,7 +5,7 @@ import java.util.Set;
 
 public class Author {
 	private String name;
-	private Set<Book> books = new HashSet<>();
+	private final Set<Book> books;
 
 	public Author(String name, Set<Book> books) {
 		this.name = name;
