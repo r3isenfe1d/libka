@@ -1,10 +1,9 @@
 package ru.r3is.libka.controllers;
 
-import org.slf4j.Logger; //simple logger facade for java
+import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.annotation.*;
 import ru.r3is.libka.dto.User;
-import ru.r3is.libka.services.UserService;
 import ru.r3is.libka.services.UserServiceImpl;
 
 import java.util.List;
