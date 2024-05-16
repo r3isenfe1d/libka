@@ -5,6 +5,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.annotation.*;
 import ru.r3is.libka.dto.User;
 import ru.r3is.libka.services.UserService;
+import ru.r3is.libka.services.UserServiceImpl;
 
 import java.util.List;
 
@@ -12,9 +13,9 @@ import java.util.List;
 @RequestMapping("/users")
 public class UserController {
 	private static final Logger log = LoggerFactory.getLogger(UserController.class);
-	private final UserService userService;
+	private final UserServiceImpl userService;
 
-	public UserController(UserService userService) {
+	public UserController(UserServiceImpl userService) {
 		this.userService = userService;
 	}
 

@@ -32,10 +32,6 @@ public class UserServiceImpl implements UserService {
 		return savedUserEntity.getId();
 	}
 
-	public void deleteById(Long userId) {
-		userRepo.deleteById(userId);
-	}
-
 	public Long addToUserBooks(Long userId, Long bookId) throws NoSuchElementException {
 		BookEntity bookEntity = bookRepo.findById(bookId).orElseThrow(NoSuchElementException::new);
 		UserEntity userEntity = userRepo.findById(userId).orElseThrow(NoSuchElementException::new);

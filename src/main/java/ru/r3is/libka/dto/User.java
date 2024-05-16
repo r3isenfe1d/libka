@@ -1,8 +1,5 @@
 package ru.r3is.libka.dto;
 
-import ru.r3is.libka.entities.BookEntity;
-
-import java.util.HashSet;
 import java.util.Set;
 
 public class User {
